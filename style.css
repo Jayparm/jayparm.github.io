@@ -1,0 +1,41 @@
+html {
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.left {
+  flex: 50%;
+  text-align: center;
+}
+
+.right {
+  flex: 50%;
+}
+
+@media (max-width: 768px) {
+  .left {
+    display: none;
+  }
+}
+
+h1,
+p,
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
