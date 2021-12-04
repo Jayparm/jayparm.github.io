@@ -12,15 +12,34 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/christmas.css">
     <link rel="stylesheet" href="./style/w3.css">
+    <link rel="stylesheet" href="./style/nav.css">
+  
 
     <title>Evan Axon</title>
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="calculator.html">Simple Calculator</a></li>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="about.html">About Me</a>
+  </div>
+
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+    </div>
+    </div>
     <div class="content">
       <div class="left">
         <img src="https://img.icons8.com/metro/192/000000/road-worker.png" />
@@ -32,6 +51,7 @@
           seeing how I'm progressing?<br />
           Check out
           <a href="https://github.com/Jayparm">my Github page!</a>
+         
         </p>
       </div>
     </div>
