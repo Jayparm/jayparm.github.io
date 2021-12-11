@@ -34,11 +34,13 @@ a {
 h1 {
   font-size: 2em;
   font-weight: 400;
+  color: white;
 }
 
 p {
   font-size: 1.2em;
   font-weight: 300;
+  color: white;
 }
 
 *,
@@ -47,6 +49,7 @@ p {
   box-sizing: border-box;
   font-family: Gotham Rounded, sans-serif;
   font-weight: normal;
+  color: white;
 }
 
 body {
@@ -57,4 +60,5 @@ body {
   background-repeat: no-repeat;
   background-position-y: 40px;
   background-color: #292929;
+  color: white;
 }
