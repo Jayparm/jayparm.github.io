@@ -2,11 +2,20 @@
 <html>
   <head>
     <title>Redirecting..</title>
+    <link rel="stylesheet" href="./circle-timer-css-code.scss">
   </head>
-  <body>
-    <script>
-      let url = "https://twitter.com/jayparmHP";
-      window.location.href = url;
-    </script>
+  <p>Redirecting..</p>
+  <div class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
+    <div class="loader" aria-hidden="true">
+      <div class="loader__sq"></div>
+      <div class="loader__sq"></div>
+    </div>
+  </div>
+  <script>
+    var timer = setTimeout(function() {
+        window.location='http://example.com'
+    }, 4000);
+</script>
   </body>
 </html>
+
