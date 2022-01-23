@@ -1,0 +1,216 @@
+body {
+  text-align: center;
+  background-color: #292929;
+  color: #e2e2e2;
+  font-size: 130%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  vertical-align: center;
+}
+#invalid {
+  color: #f33d3d;
+}
+#session {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr 1fr 4fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header header"
+    ". left middle . right ."
+    ". bottom bottom bottom bottom .";
+}
+#session,
+#lastGame,
+#currentMap {
+  border: 1px solid #e2e2e2;
+  margin: 0 10% 20px;
+}
+.pstats {
+  color: #00aa00;
+}
+.nstats {
+  color: #ff5555;
+}
+#sswexp,
+#lgExperience {
+  color: #ff55ff;
+}
+#scoins,
+#lgCoins {
+  color: #ffaa00;
+}
+#sheads,
+#lgHeads,
+#scorruption {
+  color: #aa00aa;
+}
+#sshards,
+#lgShards {
+  color: #55ffff;
+}
+#sopals {
+  color: #5555ff;
+}
+.subsession {
+  justify-self: center;
+  width: 100%;
+  margin-top: 20px;
+}
+#session h2 {
+  grid-area: header;
+  width: 100%;
+}
+#left {
+  grid-area: left;
+  text-align: left;
+  padding-left: 5%;
+  width: 95%;
+}
+#right {
+  grid-area: right;
+  text-align: left;
+  padding-left: 5%;
+  width: 95%;
+}
+#middle {
+  grid-area: middle;
+  width: 100%;
+}
+#bottom {
+  grid-area: bottom;
+  margin-bottom: 20px;
+}
+#xpbar,
+#shardsbar {
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  background-color: #e2e2e2;
+  position: relative;
+  text-align: left;
+}
+#xpbarprogress,
+#shardsbarprogress {
+  width: 0;
+  max-width: 100%;
+  height: 30px;
+}
+#xpbartext,
+#shardsbartext {
+  width: 100%;
+  color: #292929;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#xpbarprogress {
+  background-color: #ff81f3;
+}
+#shardsbarprogress {
+  background-color: #6dfffc;
+}
+#xpbar:before,
+#shardsbar:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-top: 20px solid #292929;
+  border-right: 20px solid rgba(0, 0, 0, 0);
+  width: 0;
+}
+#xpbar:after,
+#shardsbar:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 20px solid #292929;
+  border-left: 20px solid rgba(0, 0, 0, 0);
+  width: 0;
+}
+#betaList {
+  list-style: none;
+  padding-left: 0;
+  font-size: 80%;
+}
+#lgLeft {
+  text-align: left;
+  grid-area: left;
+  padding-left: 10px;
+}
+#lgRight {
+  text-align: left;
+  grid-area: right;
+  padding-left: 10px;
+}
+#lastGame h2 {
+  grid-area: header;
+}
+#lastGame {
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr 5fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header"
+    ". left . right .";
+}
+.ggLoss {
+  background-color: #ff5555;
+}
+.ggWin {
+  background-color: #00aa00;
+}
+.ggWin,
+.ggLoss {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  float: left;
+}
+.ggCorrupted {
+  border: 2px solid #aa00aa;
+  box-sizing: border-box;
+}
+.draggable h2 {
+  cursor: move;
+}
+.dragging {
+  opacity: 0.5;
+}
+h2 {
+  color: #e2e2e2;
+  position: relative;
+  margin: 0;
+  padding: 20px 0;
+  background-color: #171717;
+}
+h2 img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+#session section,
+#lastGame section,
+#currentMap section {
+  display: block;
+}
+
+#middle h2 {
+  cursor: default;
+}
+
+#mapImage {
+  max-width: 60%;
+}
