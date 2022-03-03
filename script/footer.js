@@ -1,8 +1,8 @@
 $(function () {
     var bar = '';
     bar += '<div class="footer">';
-    bar += '<div class="footerText"> ⭐ Updates Coming Soon! ⭐ </div>';
-    bar += '<div class="footerText" style="font-size: 25px;"> Website is still under construction! Thank you for your patience. </div>';
+    bar += '<div class="footerText"> jayparm.dev\'s response to the ukraine crisis </div>';
+    bar += '<div class="footerText" style="font-size: 25px;"> jayparm.dev wishes everyone who lives there to be safe. </div>';
     bar += '</div>';
     $("#footer-area").html(bar);
 
