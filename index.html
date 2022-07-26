@@ -1,72 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/christmas.css">
-    <link rel="stylesheet" href="./style/w3.css">
-    <link rel="stylesheet" href="./style/nav.css">
-    <script src="/js/footer.js" id="footer-lol"></script>
-  
-    <title>Evan Axon</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
-  </head>
-  
-  <body>
-    <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="games.html">Games</a>
-      <a href="#contact">Contact</a>
-      <a href="about.html">About Me</a>
-      <a href="twitter.html">Twitter Feed</a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Welcome to the Official Website of DashCruft! Here you can check my projects, get free bobux, get support and contact me for business inquiries.">
+
+  <meta name="author" content="DashCruft">
+  <meta name="theme-color" content="#2F3136">
+
+  <link rel="shortcut icon" href="./img/icons/favicon.ico">
+
+  <title>Jayparm (Evan)</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="module" src="./js/load.js"></script>
+  <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+  <script src="/js/spotify.js" id="nav-bar"></script>
+</head>
+
+<body>
+  <div id="main-loading-overlay">
+    <div class="spinner-content">
+      <div class="chaotic-orbit"></div>
+    </div>
   </div>
 
-      <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-50px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-        </script>
-    </div>
-    </div>
-    <div class="content">
-      <div class="left">
-        <img src="https://cdn.discordapp.com/attachments/947196956441186354/955553438920507392/channels4_profile.jpg" />
-      </div>
-      <div class="right">
-        <h1>Evan Axon</h1>
-        <p>
-          Evan Axon, also known as Jayparm is a Gamer, Developer and Content Creator. 
-          <a href="https://solo.to/jayparm">You can view all my links by click here!</a>
-        </p>
-       <div id="footer-area"></div>
-        <div class="footer">
-          <div class="footerText"> jayparm.dev's response to the ukraine crisis. </div>
-          <div class="footerText"> We wish all people who live in ukraine to stay safe and happy. <3 </div>
-            <a href="https://dec.org.uk/">PLEASE DONATE BY CLICKING HERE!</a>
-          </div>
-      </div>
-    </div>
-      </div>
-    </div>
-    <script src="./script/togglepopup.js"></script>
-  </body>
-</html>
+  <div class="Headersocials" id="centerScroll">
+    <a href="https://dashcruft.com/discord" aria-label="Discord" target="_blank">
+      <img id="socialNum1" src="./img/discord.png">
+    </a>
 
-  </body>
-</html>
+    <a href="https://github.com/DashCruft" aria-label="GitHub" target="_blank">
+      <img id="socialNum2" src="./img/github.png"
+        style="width: 35px !important; height: 34px !important; margin-top: 2px !important;">
+    </a>
 
+    <a href="https://twitter.com/DashCruft" aria-label="Twitter" target="_blank">
+      <img id="socialNum3" src="./img/twitter.png" style="width: 42px !important;">
+    </a>
+
+    <a href="https://www.instagram.com/p0ryae" aria-label="Instagram" target="_blank">
+      <img id="socialNum4" src="./img/instagram.png" style="width: 37px !important; margin-top: 2px !important;">
+    </a>
+  </div>
+
+  <div class="title">
+    <font color="white">Jayparm</font>
+  </div>
+
+  <div class="container">
+    <div class="pfp">
+      <img src="./img/icons/icon.png" alt="PFP">
+    </div>
+    <div class="txt">
+      Hello! I'm <p style="font-weight: 900; color: green;display:inline;">Evan</p>
+      <!--<p style="font-weight: bold; color: white;display;inline;">I live in the United Kingdom and and I</p>!-->
+      <br> ╰ Developer <br> ╰ Content Creator
+      <br> ╰ Gamer <br> ╰ Streamer
+    </div>
+  </div>
+
+  <div class="discord-pfp"> </div>
+  <div class="race-by"></div>
+  <div class="footer">
+    <div class="footerContent">
+      jayparm.dev - A personal project by Evan Axon
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
