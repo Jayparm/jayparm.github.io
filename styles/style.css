@@ -191,6 +191,10 @@
   margin-right: 10px;
 }
 
+#discord-button:hover {
+  color: #6441A5
+}
+
 #youtube-button {
   margin-right: 5px;
 }
