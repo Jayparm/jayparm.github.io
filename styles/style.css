@@ -1,0 +1,311 @@
+
+
+
+
+
+#disabled-main-loading-overlay {
+  cursor: default !important;
+  overflow: hidden;
+  z-index: 100000000;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: #0A0F16;
+}
+
+.spinner-content {
+    --uib-size: 40px;
+    --uib-speed: 2s;
+    --uib-color: white;
+    
+    height: var(--uib-size);
+    width: var(--uib-size);
+    vertical-align: middle;
+    transform-origin: center;
+    animation: rotate var(--uib-speed) linear infinite;
+  }
+  
+  .ring circle {
+    fill: none;
+    stroke: var(--uib-color);
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: stretch calc(var(--uib-speed) * 0.75) ease-in-out infinite;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes stretch {
+    0% {
+      stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 90, 200;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dashoffset: -124px;
+    }
+  }
+  
+  body {
+    background-image: url(../img/mountain-trees.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.border {
+  border: 5px dashed black;
+}
+
+.container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes titleSlideLeft {
+  0% {
+      transform: translateX(-60%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+@keyframes titleSlideUp {
+  100% {
+      transform: translateY(-35%)
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0%;
+  }
+  100% {
+      opacity: 100%;
+  }
+}
+
+#header {
+  animation: 0.75s ease-out 0s 1 titleSlideLeft, 1s ease-in-out 0s 1 fadeIn, 0.5s ease-out 0s 1 titleSlideUp;
+  animation-delay: 0s, 0s, 1.3s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+#header-text {
+  font-size: 50px;
+  font-weight: 600;
+  color: black;
+}
+
+#jayparm {
+  background-image: linear-gradient(70deg, #063ee8, #3651d7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#header-description {
+  animation: 1s ease-in-out 0s 1 fadeIn;
+  animation-delay: 1.2s;
+  animation-fill-mode: backwards;
+}
+
+#header-description-text {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+
+@keyframes buttonsSlideUp {
+  0% {
+      transform: translateY(150%)
+  }
+  100% {
+      transform: translateY(0)
+  }
+}
+
+#buttons-container {
+  position: absolute;
+}
+
+#link-buttons {
+  position:  absolute;
+  top: 400px;
+  display: flex;
+  grid-column-gap: 20px;
+  -webkit-column-gap: 10px;
+  column-gap: 20px;
+}
+
+.Headersocials img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.link-button {
+  color: white;
+  width: 50px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition-duration: 0.5s;
+}
+
+.link-button:hover {
+  transform: scale(1.2)
+}
+
+#discord-button {
+  margin-right: 10px;
+}
+
+#youtube-button {
+  margin-right: 5px;
+}
+
+#discord-button:hover {
+  color: #5866F2;
+}
+
+#github-button:hover {
+  color: #e8eaea 
+}
+
+#youtube-button:hover {
+  color: red;
+}
+
+#steam-button:hover {
+  color: #66c0f4;
+}
+
+#reddit-button:hover {
+  color: #ff4500;
+}
+
+#spotify-button:hover {
+  color: #1DB954;
+}
+
+#twitter-button:hover {
+  color: #00acee;
+}
+
+#sidebar-icon {
+  color: #818181;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  transition-duration: 0.5s;
+  z-index: 999;
+}
+
+#sidebar-icon:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.sidebar p {
+  display: inline-block;
+  font-size: 1vw;
+  max-width: 80%;
+  overflow: hidden;
+  color: lightgray;
+  position: absolute;
+  bottom: 5%;
+  padding: 25px;
+  opacity: 35%;
+}
+
+@keyframes footerFadeIn {
+  0% {
+      opacity: 0%;
+  }
+  100% {
+      opacity: 35%;
+  }
+}
+
+.fadein {
+  animation: footerFadeIn 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+}
+
+.fadein {
+  animation: footerFadeIn 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+}

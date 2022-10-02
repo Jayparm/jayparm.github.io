@@ -1,104 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en_GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./img/icons/jayman-removebg.ico"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a66edf8f0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description"
-    content="Welcome to jayparm.dev - View my socials, interests and more!">
+    <title>Jayparm | Home</title>
 
-  <meta name="author" content="Evan Axon - Jayparms">
-  <meta name="theme-color" content="#2F3136">
-
-  <link rel="shortcut icon" href="./img/icons/favicon.ico">
-
-  <title>Jayparm (Evan)</title>
-
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet" href="css/style.css">
-
-  <script type="module" src="./js/load.js"></script>
-  <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
-  <script src="/js/spotify.js" id="nav-bar"></script>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTF8W5TF5Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-QTF8W5TF5Q');
-  </script>
-</head>
-<body>
-  <div id="main-loading-overlay">
-    <div class="spinner-content">
-      <div class="chaotic-orbit"></div>
+    <!--ENABLE THESE TO ENABLE BOOTSTRAP (REMOVE THE COMMENTS)-->
+    <!--Bootstrap-->
+    <!-- CSS only -->
+  <!--REMOVE THIS-->  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> !-->
+  </head>
+  <body>
+    <!--Preloader-->
+    <div id="main-loading-overlay">
+      <div class="ring">
     </div>
-  </div>
 
-  <div class="Headersocials" id="centerScroll">
-    <a href="https://discord.gg/ZP2P3N5aTz" aria-label="Discord" target="_blank">
-      <img id="socialNum1" src="./img/discord.png">
-    </a>
-<!--
-    <a href="https://twitch.tv/jayparmlive" aria-label="Twitch" target="_blank">
-      <img id="socialNum2" src="./img/twitch.png"
-        style="width: 35px !important; height: 34px !important; margin-top: 2px !important;">
-    </a>
-    !-->
-    <a href="https://github.com/Jayparm" aria-label="GitHub" target="_blank">
-      <img id="socialNum2" src="./img/github.png"
-        style="width: 35px !important; height: 34px !important; margin-top: 2px !important;">
-    </a>
-
-    <a href="https://twitter.com/jayparmwtf" aria-label="Twitter" target="_blank">
-      <img id="socialNum3" src="./img/twitter.png" style="width: 42px !important;">
-    </a>
-
-    <a href="https://www.instagram.com/evanaxon" aria-label="Instagram" target="_blank">
-      <img id="socialNum4" src="./img/instagram.png" style="width: 37px !important; margin-top: 2px !important;">
-    </a>
-  </div>
-
-  <div class="title">
-    <font color="white">Jayparm</font>
-  </div>
-
-  <div class="container">
-    <div class="pfp">
-      <img src="./img/icons/icon.png" alt="PFP">
+    <!--Start of content-->
+    <i id="sidebar-icon" class="fa-solid fa-bars fa-2x" onclick="toggleNav()"></i>
+    <div id="sidebar" class="sidebar">
+        <a href="index">Home</a>
+        <a href="projects">Projects</a>
+        <a href="contact">Contact</a>
+        <p id="sidebar-footer"><a href="adminpanel.html">Log in to admin panel</a></p>
     </div>
-    <div class="txt">
-      Hello! I'm <p style="font-weight: 900; color: green;display:inline;">Evan</p>
-      <!--<p style="font-weight: bold; color: white;display;inline;">I live in the United Kingdom and and I</p>!-->
-      <br> ╰ Developer <br> ╰ Content Creator
-      <br> ╰ Gamer <br> ╰ Streamer
+
+    <div id="header-container" class="container">
+      <div id="header">
+        <h1 id="header-text">Hello, I'm <span id="jayparm">Jayparm</span></h1>
+      </div>
     </div>
-  </div>
-<!---
-  <div class="twitch">
-    <iframe src="https://player.twitch.tv/?channel=jayparmlive&parent=jayparm.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-  </div>
-  <div class="discord-pfp"> </div>
-  <div class="race-by"></div>
-  <div class="footer">
-    <div class="footerContent">
-      jayparm.dev - A personal project by Evan Axon
-      <span></span>
-      <span></span>
-      <span></span>
+
+    <div id="header-description-container" class="container">
+      <div id="header-description">
+        <h2 id="header-description-text">
+          A Streamer, Content Creator and Programmer from the United Kingdom
+        </h2>
+      </div>
     </div>
-  </div>
-  </div>
-  </div>
-  !--->
+
+    <div id="buttons-container" class="container">
+      <div id="link-buttons">
+        <a href="https://discord.com/users/753315123573162115" target="_blank"><i id="discord-button" class="link-button fa-brands fa-discord fa-3x"></i></a>
+        <a href="https://github.com/jayparm" target="_blank"><i id="github-button" class="link-button fa-brands fa-github fa-3x"></i></a>
+        <a href="https://www.youtube.com/channel/UCW3jr6-LQ2OPBxFuzPiECcg" target="_blank"><i id="youtube-button" class="link-button fa-brands fa-youtube fa-3x"></i></a>
+        <!-- <a href="https://steamcommunity.com/id//" target="_blank"><i id="steam-button" class="link-button fa-brands fa-steam fa-3x"></i></a> !-->
+        <a href="https://www.reddit.com/user/jayparm" target="_blank"><i id="reddit-button" class="link-button fa-brands fa-reddit fa-3x"></i></a>
+        <a href="https://open.spotify.com/user/affns4elitzs24k3mxvgz858h" target="_blank"><i id="spotify-button" class="link-button fa-brands fa-spotify fa-3x"></i></a>
+        <a href="https://twitter.com/jayparmwtf" target="_blank"><i id="twitter-button" class="link-button fa-brands fa-twitter fa-3x"></i></a>        
+      </div>
+    </div>
 </body>
-
 </html>
