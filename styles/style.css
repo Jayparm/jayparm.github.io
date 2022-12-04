@@ -63,7 +63,7 @@
   }
   
   body {
-    background-image: url(../img/mountain-trees.jpg);
+    background-image: url(../img/christmas-tree-fireplace.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
@@ -125,11 +125,15 @@
 #header-text {
   font-size: 50px;
   font-weight: 600;
-  color: black;
+  color: white;
 }
 
 #jayparm {
-  background-image: linear-gradient(70deg, #063ee8, #3651d7);
+  background-image: linear-gradient(70deg, #e80606, #06ff02); 
+  /*
+  Normal: #063ee8, #3651d7
+  Christmas: #e80606, #06ff02
+  */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -144,7 +148,7 @@
 #header-description-text {
   font-size: 30px;
   font-weight: 400;
-  color: black;
+  color: white;
 }
 
 @keyframes buttonsSlideUp {
