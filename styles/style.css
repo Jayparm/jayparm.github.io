@@ -63,7 +63,7 @@
   }
   
   body {
-    background-image: url(../img/christmas-tree-fireplace.jpg);
+    background-image: url(../img/real-mountains-trees.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
@@ -122,6 +122,20 @@
   padding-bottom: 25px;
 }
 
+#projects-header {
+  animation: 0.75s ease-out 0s 1 titleSlideLeft, 1s ease-in-out 0s 1 fadeIn, 0.5s ease-out 0s 1 titleSlideUp;
+  animation-delay: 0s, 0s, 1.3s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  padding-bottom: 300px;
+}
+
+#projects-header-text {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+
 #header-text {
   font-size: 50px;
   font-weight: 600;
@@ -129,10 +143,11 @@
 }
 
 #jayparm {
-  background-image: linear-gradient(70deg, #e80606, #06ff02); 
+  background-image: linear-gradient(70deg, #e1680b, #3ebc0b); 
   /*
   Normal: #063ee8, #3651d7
   Christmas: #e80606, #06ff02
+  Orange and Green Trees Background: #e1680b, #3ebc0b
   */
   background-clip: text;
   -webkit-background-clip: text;
@@ -149,6 +164,15 @@
   font-size: 30px;
   font-weight: 400;
   color: white;
+}
+
+#projectsgithub {
+  position: absolute;
+  left: 380px;
+  right: 0px;
+  bottom: 450px;
+  
+
 }
 
 @keyframes buttonsSlideUp {
@@ -317,3 +341,22 @@
   right: 25px;
   font-size: 36px;
 }
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 2 / 4 / 3 / 5; }
+  .div2 { grid-area: 3 / 2 / 4 / 3; }
+  .div3 { grid-area: 3 / 3 / 4 / 4; }
+  .div4 { grid-area: 3 / 4 / 4 / 5; }
+  .div5 { grid-area: 4 / 4 / 5 / 5; }
+  .div6 { grid-area: 4 / 3 / 5 / 4; }
+  .div7 { grid-area: 4 / 2 / 5 / 3; }
+  .div8 { grid-area: 5 / 4 / 6 / 5; }
+  .div9 { grid-area: 5 / 3 / 6 / 4; }
+  .div10 { grid-area: 5 / 2 / 6 / 3; }
