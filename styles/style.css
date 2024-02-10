@@ -1,3 +1,27 @@
+@media only screen and (max-width: 768px) {
+  #header-text {
+    font-size: 40px; /* Adjust as needed for smaller screens */
+  }
+
+  #header-description-text {
+    font-size: 20px; /* Adjust as needed for smaller screens */
+  }
+
+  #buttons-container {
+    top: 300px; /* Adjust as needed for smaller screens */
+  }
+
+  #link-buttons {
+    top: 250px; /* Adjust as needed for smaller screens */
+  }
+
+  .link-button {
+    width: 40px; /* Adjust as needed for smaller screens */
+    height: 40px; /* Adjust as needed for smaller screens */
+    font-size: 20px; /* Adjust as needed for smaller screens */
+  }
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -133,6 +157,8 @@
   border: 5px dashed black;
 }
 
+
+
 .container {
   position: absolute;
   top: 0px;
@@ -242,18 +268,25 @@
   position: absolute;
 }
 
-#link-buttons {
-  position:  absolute;
-  top: 400px;
-  display: flex;
-  grid-column-gap: 20px;
-  -webkit-column-gap: 10px;
-  column-gap: 20px;
+.Headersocials img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .Headersocials img:hover {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+}
+
+#link-buttons {
+  position: absolute;
+  top: calc(50% + 50px); /* Adjust this value based on your design */
+  display: flex;
+  grid-column-gap: 20px;
+  -webkit-column-gap: 10px;
+  animation: 1s ease-in-out 0s 1 buttonsSlideUp;
+  animation-delay: 1.2s;
+  animation-fill-mode: backwards;
 }
 
 .link-button {
